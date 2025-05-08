@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Debate Practice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Debate Practice Platform</h1>
+        <div id="setup" class="section">
+            <h2>Debate Setup</h2>
+            <input type="text" id="debater1" placeholder="Debater 1 Name">
+            <input type="text" id="debater2" placeholder="Debater 2 Name">
+            <button id="startDebate">Start New Debate</button>
+        </div>
+        <div id="debate" class="section hidden">
+            <div id="topic"></div>
+            <div id="timer"></div>
+            <div id="currentSpeaker"></div>
+            <div id="speechArea">
+                <textarea id="speechInput" placeholder="Enter your speech here..."></textarea>
+                <button id="submitSpeech">Submit Speech</button>
+            </div>
+            <div id="debateHistory"></div>
+        </div>
+        <div id="results" class="section hidden">
+            <h2>Debate Results</h2>
+            <div id="judgement"></div>
+            <div id="feedback"></div>
+            <button id="newDebate">Start New Debate</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
